@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><span class="purple">const</span> app = <span class="light-blue">express</span>( );</p>
                 <p><span class="purple">const</span> apitoolkitClient = APIToolkit.<span class="orange">NewClient</span>( { <span class="brown">apiKey</span>: <span class="lemon">"{YOUR_API_KEY_HERE}"</span> } );</p>
                 <br>
-                <p>app.<span class="light-blue">use</span>(apitoolkitClient.expressMiddleware)</p>
+                <p>app.<span class="light-blue">use</span><br>(apitoolkitClient.<br>expressMiddleware)</p>
                 <p class="fade">// All controllers should live here</p>
                 <p>app.<span class="light-blue">get</span>("/", (req, res) => {<br>} );</p>
                 <p class="fade">// ...</p>
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </section>
                     <p class="space-down">Next, register the middleware in your <span class="shaded">app/Http/Kernel.php</span> file.</p>
                     <section class="code-five-codepad">
-                        <p><span class="gap"></span>[<br><span class="gap"></span><span class="gap"></span><span class="brown">\APIToolkit\Http\Middleware\APIToolkit</span>::<span class="brown">class</span> ,<br><span class="gap"></span><span class="gap"></span>] ,<br><span class="gap"></span>] ;<br>}</p>
+                        <p><span class="gap"></span>[<br><span class="gap"></span><span class="gap"></span><span class="brown">\APIToolkit\Http\Middleware\<br><span class="gap"></span><span class="gap"></span>APIToolkit</span>::<span class="brown">class</span> ,<br><span class="gap"></span><span class="gap"></span>] ,<br><span class="gap"></span>] ;<br>}</p>
                     </section>
                     <p id="read-guide">⏭️: Read the <a href="https://apitoolkit.io/docs/sdks/php/laravel"><b>Laravel SDK guide </b></a> to learn more.</p>
         `,
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>ctx := context.Background( )</p>
                     <p>apitoolkitClient, err := apitoolkit.NewClient(ctx, apitoolkit.Config{APIKey:<span class="lemon">"{YOUR_API_KEY_HERE}"</span> } )</p>
                     <p><span class="purple">if</span> err != <span class="light-blue">nil</span> {<br><span class="brown">panic</span>(err)<br>}</p>
-                    <p>http.Handle(<span class="lemon">"/"</span>, apitoolkitClient.Middleware(http.HandlerFunc(<span class="purple">func</span>(w http.ResponseWriter, r *http.Request) {</p>
+                    <p>http.Handle(<span class="lemon">"/"</span>, apitoolkitClient.Middleware<br>(http.HandlerFunc(<span class="purple">func</span>(w http.ResponseWriter,<br> r *http.Request) {</p>
                     <p>w.Write( [ ]<span class="purple">byte</span>(<span class="lemon">"Hello, World!"</span>) )<br>} ) ) )</p>
                     <p>http.ListenAndServe(<span class="lemon">":8080"</span>, <span class="light-blue">nil</span>)<br>}</p>
                 </section>
@@ -281,11 +281,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>)</p><br>
                     <p><span class="purple">func</span> <span class="light-blue">main</span>( ) {</p><br>
                     <p><span class="gap"></span><span class="fade">// Initialize the client using your apitoolkit.io generated apikey</span></p>
-                    <p>apitoolkitClient, err := apitoolkit.NewClient(context.Background(), apitoolkit.Config{APIKey: <span class="lemon">"{YOUR_API_KEY_HERE}"</span>})</p>
+                    <p>apitoolkitClient, err := apitoolkit.NewClient<br>(context.Background(), apitoolkit.Config{<br>APIKey: <span class="lemon">"{YOUR_API_KEY_HERE}"</span>})</p>
                     <p><span class="gap"></span><span class="purple">if</span> err != <span class="light-blue">nil</span> {<br><span class="gap"></span><span class="gap"></span><span class="brown">panic</span>(err)<br<span class="gap"></span>>}</p><br>
                     <p><span class="gap"></span>router := gin.New( )</p>
                     <p><span class="gap"></span><span class="fade">// Register with the corresponding middleware of your choice. For Gin router, we use the GinMiddleware method.</span></p>
-                    <p><span class="gap"></span>router.Use(apitoolkitClient.GinMiddleware)<br><br>}</p>
+                    <p><span class="gap"></span>router.Use<br>(apitoolkitClient.GinMiddleware)<br><br>}</p>
                 </section>
                 <p id="read-guide">⏭️: Read the <a href="https://apitoolkit.io/docs/sdks/golang/gin"><b>Go Gin SDK guide</b></a> to learn more.</p>
         `,
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p><span class="gap"></span><span class="gap"></span><span class="brown">apikey</span>: <span class="lemon">"{YOUR_API_KEY_HERE}"</span>,</p>
                     <p><span class="gap"></span>});</p>
                     <p><span class="gap"></span><span class="purple">const</span> app = <span>await</span> <span class="brown">NestFactory</span>.<span class="light-blue">create</span>(App<span class="brown">Module</span>);</p>
-                    <p><span class="gap"></span>app.<span class="light-blue">use</span>(apiToolkitClient.expressMiddleware);</p>
+                    <p><span class="gap"></span>app.<span class="light-blue">use</span><br>(apiToolkitClient.<br>expressMiddleware);</p>
                     <p><span class="gap"></span><span class="purple">await</span> app.<span class="light-blue">listen</span>(<span class="brown">3000</span>);</p>
                     <p>}<br><span class="fade">//</span></p>
                     <p><span class="light-blue">bootstrap</span>( );</p>
@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p><span class="gap"></span>}</p><br>
                     <p><span class="gap"></span>r := mux.NewRouter( )</p>
                     <p><span class="gap"></span><span class="fade">// Register middleware</span></p>
-                    <p><span class="gap"></span>r.Use(apitoolkitClient.GorillaMuxMiddleware)</p>
+                    <p><span class="gap"></span>r.Use(apitoolkitClient.<br>GorillaMuxMiddleware)</p>
                     <p>}</p>
                 </section>
                 <p id="read-guide">⏭️: Read the <a href="https://apitoolkit.io/docs/sdks/golang/gorillamux"><b>Go Gorilla Mux SDK guide </b></a> to learn more.</p>
@@ -417,7 +417,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>setting = {<span class="lemon">"APITOOLKIT_KEY"</span>: <span class="lemon">"{YOUR_API_KEY_HERE}"</span>}</p>
                     <p><span class="purple">with</span> Configurator(settings=setting) <span class="purple">as</span> config:</p>
                     <p><span class="fade"># Add APItoolkit tween</span></p>
-                    <p>config.add_tween(<span class="lemon">"apitoolkit_pyramid.APIToolkit"</span>)</p>
+                    <p>config.add_tween<br>(<span class="lemon">"apitoolkit_pyramid.<br>APIToolkit"</span>)</p>
                     <p>config.add_route(<span class="lemon">'home'</span>, <span class="lemon">'/'</span>)</p>
                     <p>config.scan( )</p>
                     <p>app = config.make_wsgi_app( )</p>
