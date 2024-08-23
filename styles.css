@@ -407,12 +407,28 @@ nav a {
     #first-section h1{
         font-size: 2em;
     }
+
+    #first-section ul li{
+        width: 100%;
+        font-size: 0.8em;
+        text-decoration: underline;
+    }
+
+    #get-a-demo{
+        padding: 1em;
+    }
 }
 
 #paragraphs p{
     color: rgb(61, 61, 61);
     font-size: 0.8em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 400px) {
+    #paragraphs p{
+        text-decoration: underline;
+    }
 }
 
 #trustpilotreview img{
@@ -595,6 +611,10 @@ nav a {
 @media (max-width: 400px) {
     .ceo-info img{
         width: 12em;
+    }
+
+    #brandlogo h5{
+        margin-top: -2em;
     }
 }
 
@@ -1021,9 +1041,7 @@ footer section:nth-of-type(1) p{
 
 @media (max-width: 420px) {
     #inner-h21, #inner-p1{
-        align-self: center;
         width: 80%;
-        margin-right: 5em;
     }
 
     .outer-shell{
@@ -1485,6 +1503,12 @@ footer section:nth-of-type(1) p{
     border-radius: 20px;
 }
 
+@media (max-width: 400px) {
+    footer section:nth-of-type(1) p{
+        margin-bottom: 2em;
+    }
+}
+
 
 @media (max-width: 1100px){
     .fs2ss:nth-of-type(1){
@@ -1735,6 +1759,96 @@ footer section:nth-of-type(1) p{
     #fds2 .fs2ss:nth-of-type(4) .fdsd-p1, #fds3 .fs2ss:nth-of-type(3) .fdsd-p1, #fds2 .fs2ss:nth-of-type(7) .fdsd-p1, #fds3 .fs2ss:nth-of-type(2) .fdsd-p1{
         font-size: 1em;
     }
+
+    .outer-shell{
+        height: 23em;
+    }
+
+    #shell5{
+        height: 30em;
+    }
+
+    #discord{
+        width: 80%;
+        margin-top: 1em;
+        margin-right: 1em;
+    }
+
+    #shell7{
+        height: 25em;
+    }
+
+    #footer-sect1 .extra-shell{
+        height: 35em;
+    }
+
+    #fs2h2{
+        margin-top: -2em;
+    }
+
+    #fs2p{
+        margin-bottom: 3em;
+    }
+
+    .fs2ss:nth-of-type(1), .fs2ss:nth-of-type(4){
+        height: 23em;
+    }
+
+    .fs2ss:nth-of-type(2){
+        height: 18em;
+    }
+
+    .fs2ss:nth-of-type(3){
+        height: 20em;
+    }
+
+    .fs2ss:nth-of-type(5){
+        height: 12em;
+    }
+
+    .fs2ss:nth-of-type(6){
+        height: 25em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(1){
+        margin-top: -9em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(1) .fdsd-p2{
+        margin-top: -1em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(2), #fds2 .fs2ss:nth-of-type(6), #fds2 .fs2ss:nth-of-type(7){
+        height: 21em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(3){
+        height: 15em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(4), #fds3 .fs2ss:nth-of-type(3), #fds3 .fs2ss:nth-of-type(4){
+        height: 22em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(5){
+        height: 27em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(1){
+        height: 32em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(2){
+        height: 15em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(5) .fdsd-p2{
+        margin-bottom: -3em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(5){
+        height: 65em;
+    }
 }
 
 #testimonial{
@@ -1868,6 +1982,7 @@ details[open] summary{
 @media(max-width: 400px){
     #faq h2{
         font-size: 2.5em;
+        margin-top: -6em;
     }
 
     #faq{
@@ -1882,6 +1997,10 @@ details[open] summary{
 
     #faq div:nth-of-type(2){
         margin-top: -3em;
+    }
+
+    #faq-a{
+        margin-bottom: -5em;
     }
 }
 
@@ -2191,7 +2310,19 @@ details[open] summary{
 
 @media (max-width: 400px){
     #codes{
-        height: 185em;
+        height: 190em;
+    }
+
+    #code-one h2{
+        margin-top: -8em;
+    }
+
+    #code-four{
+        margin-top: -2em;
+    }
+
+    #code-five{
+        margin-top: -2em;
     }
 }
 
@@ -2469,8 +2600,8 @@ details[open] summary{
     #message-button{
         width: 20px;
         height: 20px;
-        right: 80px;
-        bottom: 60px;
+        right: 60px;
+        bottom: 30px;
     }
 
     #msg-icon{
@@ -2608,3 +2739,170 @@ details[open] summary{
         display: none;
     }
 }
+
+@media (max-width: 350px) {
+    #freestart{
+        padding: 1em;
+    }
+
+    #paragraphs p{
+        margin-bottom: 1em;
+        width: 100%;
+        margin-left: 4em;
+    }
+
+    .graph-span{
+        font-size: 1.2em;
+    }
+
+    #api-paragraph, #api-paragraph2, #api-paragraph3{
+        margin-bottom: 7em;
+    }
+
+    .graph h2{
+        font-size: 1.5em;
+    }
+
+    #second-outershell{
+        height: 25em;
+    }
+
+    #shell5{
+        height: 32em;
+    }
+
+    #shell7{
+        height: 28em;
+    }
+    
+    #footer-sect1 .extra-shell{
+        height: 38em;
+    }
+
+    footer section:nth-of-type(1) p{
+        font-size: 0.9em;
+    }
+
+    .fs2ss:nth-of-type(2) .fdsd-p2{
+        margin-top: -1em;
+    }
+
+    .fs2ss:nth-of-type(1), #fds3 .fs2ss:nth-of-type(4), #fds3 .fs2ss:nth-of-type(1), #fds3 .fs2ss:nth-of-type(3), #fds3 .fs2ss:nth-of-type(2), #fds2 .fs2ss:nth-of-type(7), #fds2 .fs2ss:nth-of-type(6), #fds2 .fs2ss:nth-of-type(5), #fds2 .fs2ss:nth-of-type(4), #fds2 .fs2ss:nth-of-type(3), #fds2 .fs2ss:nth-of-type(2), .fs2ss:nth-of-type(7), .fs2ss:nth-of-type(6), #fds2 .fs2ss:nth-of-type(1), .fs2ss:nth-of-type(5), .fs2ss:nth-of-type(4), .fs2ss:nth-of-type(3), .fs2ss:nth-of-type(2){
+        width: 85%;
+    }
+
+    .fs2ss:nth-of-type(3){
+        height: 22em;
+    }
+
+    .fs2ss:nth-of-type(4){
+        height: 20em;
+    }
+
+    .fs2ss:nth-of-type(5){
+        height: 17em;
+    }
+
+    .fs2ss:nth-of-type(6) .fdsd-p2{
+        margin-top: -1em;
+    }
+
+    .fs2ss:nth-of-type(6) .fa-circle-play{
+        margin-left: 60px;
+        margin-top: 0em;
+    }
+
+    .fs2ss:nth-of-type(7){
+        height: 17em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(1){
+        height: 25em;
+    }
+
+    .fdsd-p2 a{
+        font-size: 0.6em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(2){
+        height: 28em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(3){
+        height: 19em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(4){
+        height: 30em;
+    }
+
+    #fds2 .fdsd-p1 a{
+        font-size: 0.8em;
+        margin-bottom: 2em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(5) .fdsd-p1{
+        font-size: 1em;
+    }
+
+    #fds2 .fdsd-p2{
+        margin-top: -2em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(6){
+        height: 26em;
+    }
+
+    #fds2 .fs2ss:nth-of-type(7){
+        height: 27em;
+    }
+
+    #fds3 .fdsd-p1{
+        margin-top: -1em;
+    }
+
+    #fds3 .fdsd-p1 a{
+        font-size: 0.8em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(4){
+        height: 28em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(5) video{
+        margin-top: -4em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(5){
+        height: 70em;
+    }
+
+    #testimonial{
+        color: white;
+    }
+
+    #faq h2{
+        font-size: 2em;
+    }
+
+    #faq a{
+        margin-bottom: 5em;
+    }
+
+    #faq{
+        margin-bottom: 17em;
+    }
+
+    #code-one h2{
+        margin-top: -4em;
+    }
+
+    .code-five-codepad{
+        width: 80%;
+    }
+
+    #code-five .code-five-codepad p{
+        font-size: 0.8em;
+    }
+}
+
