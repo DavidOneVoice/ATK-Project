@@ -2688,6 +2688,7 @@ details[open] summary{
         padding: 1em;
     }
 
+
     .nav-item {
         margin: 0.5em 0;
     }
@@ -2791,20 +2792,40 @@ details[open] summary{
         width: 85%;
     }
 
+    .fs2ss:nth-of-type(1){
+        height: 28em;
+    }
+
+    footer section:nth-of-type(1) p{
+        margin-bottom: 4em;
+    }
+
     .fs2ss:nth-of-type(3){
-        height: 22em;
+        height: 27em;
+    }
+
+    .fs2ss:nth-of-type(2){
+        height: 17em;
+    }
+
+    .fs2ss .fdsd-p2{
+        font-size: 1.2em;
     }
 
     .fs2ss:nth-of-type(4){
-        height: 20em;
+        height: 23em;
     }
 
     .fs2ss:nth-of-type(5){
-        height: 17em;
+        height: 19em;
     }
 
     .fs2ss:nth-of-type(6) .fdsd-p2{
         margin-top: -1em;
+    }
+
+    .fs2ss:nth-of-type(6){
+        height: 27em;
     }
 
     .fs2ss:nth-of-type(6) .fa-circle-play{
@@ -2904,5 +2925,103 @@ details[open] summary{
     #code-five .code-five-codepad p{
         font-size: 0.8em;
     }
+
+    #inner-h21{
+        font-size: 1.2em;
+    }
+
+    .fs2ss:nth-of-type(2) .fa-x-twitter, .fs2ss:nth-of-type(5), #fds2 .fs2ss:nth-of-type(1) .fa-x-twitter, .fs2ss:nth-of-type(7) .fa-x-twitter, .fs2ss:nth-of-type(6) .fa-x-twitter, .fs2ss:nth-of-type(4) .fa-x-twitter{
+        display: none;
+    }
+
+    .fs2ss:nth-of-type(4) .fdsd-p2{
+        margin-top: -1em;
+    }
+
+    #shell7{
+        height: 30em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(1){
+        height: 35em;
+    }
 }
+
+@media (max-width: 400px) {
+    #code-four {
+        display: flex;
+        flex-wrap: nowrap; /* Prevents wrapping to multiple rows */
+        overflow-x: auto; /* Enables horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Adds momentum scrolling on iOS devices */
+        min-height: 200px; /* Ensures the container has a height */
+        overflow-y: hidden; /* Prevents vertical scrolling */
+    }
+
+    #code-four > div {
+        flex: 0 0 auto; /* Keeps the divs from shrinking */
+        width: 60%; /* Adjusts width so two divs are shown partially */
+        max-width: 60%;
+        margin-right: 1em;
+        height: 150px; /* Set a height for the children */
+        background-color: rgba(0, 0, 255, 0.1); /* Optional: Background color for visibility */
+    }
+
+    /* Optional: Customize scrollbar appearance */
+    #code-four::-webkit-scrollbar {
+        height: 8px; /* Horizontal scrollbar height */
+    }
+
+    #code-four::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+
+    .graph-div img{
+        height: 250px
+    }
+
+    .fs2ss:nth-of-type(3){
+        height: 23em;
+    }
+
+    .fs2ss:nth-of-type(6){
+        height: 30em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(5){
+        height: 67em;
+    }
+
+    #codes{
+        height: 110em;
+    }
+
+    #code-five p{
+        font-size: 0.8em;
+    }
+
+    #shell5{
+        height: 30em;
+    }
+
+    .fs2ss:nth-of-type(3){
+        height: 25em;
+    }
+
+    #faq-a{
+        color: white;
+        padding: 1em 2em;
+        background-color: rgb(74, 74, 255);
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 350px) {
+    #codes{
+        height: 140em;
+    }
+}
+
 

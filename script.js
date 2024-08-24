@@ -415,7 +415,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p><span class="purple">return</span> Response(<span class="lemon">'Welcome!'</span>)</p><br>
                     <p><span class="purple">if</span> __name__ == <span class="lemon">'__main__'</span>:</p>
                     <p>setting = {<span class="lemon">"APITOOLKIT_KEY"</span>: <span class="lemon">"{YOUR_API_KEY_HERE}"</span>}</p>
-                    <p><span class="purple">with</span> Configurator(settings=setting) <span class="purple">as</span> config:</p>
+                    <p><span class="purple">with</span> Configurator<br>(settings=setting) <span class="purple">as</span> config:</p>
                     <p><span class="fade"># Add APItoolkit tween</span></p>
                     <p>config.add_tween<br>(<span class="lemon">"apitoolkit_pyramid.<br>APIToolkit"</span>)</p>
                     <p>config.add_route(<span class="lemon">'home'</span>, <span class="lemon">'/'</span>)</p>
