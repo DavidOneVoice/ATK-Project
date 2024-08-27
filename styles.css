@@ -2600,8 +2600,8 @@ details[open] summary{
     #message-button{
         width: 20px;
         height: 20px;
-        right: 60px;
-        bottom: 30px;
+        right: 30px;
+        bottom: 20px;
     }
 
     #msg-icon{
@@ -2947,6 +2947,13 @@ details[open] summary{
     }
 }
 
+@media (max-width: 450px) {
+    body {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
 @media (max-width: 400px) {
     #code-four {
         display: flex;
@@ -3016,12 +3023,25 @@ details[open] summary{
         cursor: pointer;
         text-decoration: none;
     }
+
+    #second-outershell{
+        height: 26em;
+    }
 }
+
 
 @media (max-width: 350px) {
     #codes{
         height: 140em;
     }
+
+    #third-outershell{
+        height: 26em;
+    }
 }
 
-
+@media (max-width: 300px) {
+    #first-outershell{
+        height: 26em;
+    }
+}
