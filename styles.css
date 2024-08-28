@@ -3113,7 +3113,7 @@ details[open] summary{
     }
 
     #shell7{
-        height: 30em;
+        height: 32em;
     }
 
     #fds3 .fs2ss:nth-of-type(1) .fa-x-twitter{
@@ -3127,5 +3127,9 @@ details[open] summary{
     #view-sdk{
         padding-left: 1em;
         padding-right: 1em;
+    }
+
+    #third-outershell{
+        height: 30em;
     }
 }
