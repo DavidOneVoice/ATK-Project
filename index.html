@@ -23,7 +23,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar-left">
-            <a href="index.html" class="nav-link"><img src="logo_full_color.svg" id="homelink" alt="homepage-icon"></a>
+            <a href="index.html" class="nav-link" id="logo-link"><img src="logo_full_color.svg" id="homelink" alt="homepage-icon"></a>
         </div>
 
         <ul class="nav-list">
@@ -102,12 +102,25 @@
             <li class="nav-item">
                 <a href="https://apitoolkit.io/pricing/" class="nav-link" id="link5">Pricing</a>
             </li>
+
+            <!-- Adding Sign In, Start for Free, and theme toggler in the nav-list for small screens -->
+            <li class="nav-item" id="hiddenbtn1">
+                <a href="https://apitoolkit.eu.auth0.com/u/login?state=hKFo2SBxbmVyV1pkX195bC0xTjkwemJVOTA2cUFNcjlBejZpV6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHFvbVMwM0JMeldseE5Udk9oU0gyT2dYUGNheUc5bmgwo2NpZNkgQ0NoZnE2bGVSR2RuOWhhSFdzS0Q5RHRtbVl2RDlYYUM" id="signinbtn">Sign In</a>
+            </li>
+            <li class="nav-item" id="hiddenbtn2">
+                <a href="https://apitoolkit.eu.auth0.com/u/login?state=hKFo2SBHVXNLRnpMUkMtd3lBeXRwRmhPTzdqbFJVMWlJUFYwWqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHR6dG1kc0NxQWdDcnZNZWZYMU5hZVNEdFc5T2VQS2pio2NpZNkgQ0NoZnE2bGVSR2RuOWhhSFdzS0Q5RHRtbVl2RDlYYUM" id="startbtn">Start For Free</a>
+            </li>
+            <li class="nav-item theme-toggle" id="hiddenbtn3">
+                <i class="fa-solid fa-moon" id="toggler"></i>
+            </li>
         </ul>
+
         <div id="right-nav">
             <a href="https://apitoolkit.eu.auth0.com/u/login?state=hKFo2SBxbmVyV1pkX195bC0xTjkwemJVOTA2cUFNcjlBejZpV6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHFvbVMwM0JMeldseE5Udk9oU0gyT2dYUGNheUc5bmgwo2NpZNkgQ0NoZnE2bGVSR2RuOWhhSFdzS0Q5RHRtbVl2RDlYYUM" id="signinbtn">Sign In</a>
             <a href="https://apitoolkit.eu.auth0.com/u/login?state=hKFo2SBHVXNLRnpMUkMtd3lBeXRwRmhPTzdqbFJVMWlJUFYwWqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHR6dG1kc0NxQWdDcnZNZWZYMU5hZVNEdFc5T2VQS2pio2NpZNkgQ0NoZnE2bGVSR2RuOWhhSFdzS0Q5RHRtbVl2RDlYYUM" id="startbtn">Start For Free</a>
             <span class="theme-toggle"><i class="fa-solid fa-moon" id="toggler"></i></span>
         </div>
+
         <div class="toggle-nav">
             <button class="open-nav"><i class="fas fa-bars"></i></button>
             <button class="close-nav"><i class="fas fa-times"></i></button>
@@ -602,54 +615,56 @@
             <p><b>If we don't support your framework, kindly email <a href="mailto:hello@apitoolkit.io">hello@apitoolkit</a> and we'll create an SDK for you ASAP!</b></p>
         </div>
         <div id="code-two">
-            <section id="code-four">
-                <div id="div1">
-                    <img src="./express-logo.png" class="code-four-image" id="express" alt="">
-                </div>
-                <div id="div2">
-                    <img src="./phoenix-logo.png" class="code-four-image" id="phoenix" alt="">
-                </div>
-                <div id="div3">
-                    <img src="./laravel-logo.png" class="code-four-image" id="laravel" alt="">
-                </div>
-                <div id="div4">
-                    <img src="./netcore-logo.png" class="code-four-image" id="nest" alt="">
-                </div>
-                <div id="div5">
-                    <img src="./django-logo.png" class="code-four-image" id="django" alt="">
-                </div>
-                <div id="div6">
-                    <img src="./go-logo.svg" class="code-four-image" id="go" alt="">
-                </div>
-                <div id="div7">
-                    <img src="./fastapi-logo.png" class="code-four-image" id="fast-api" alt="">
-                </div>
-                <div id="div8">
-                    <img src="./symfony-logo.png" class="code-four-image" id="symfony" alt="">
-                </div>
-                <div id="div9">
-                    <img src="./flask-logo.png" class="code-four-image" id="flask" alt="">
-                </div>
-                <div id="div10">
-                    <img src="./gin-logo.png" class="code-four-image" id="gin" alt="">
-                </div>
-                <div id="div11">
-                    <img src="./adonis-logo.png" class="code-four-image" id="adonis" alt="">
-                </div>
-                <div id="div12">
-                    <img src="./fastify-logo.png" class="code-four-image" id="fastify" alt="">
-                </div>
-                <div id="div13">
-                    <img src="./nest-logo.png" class="code-four-image" id="nest2" alt="">
-                </div>
-                <div id="div14">
-                    <img src="./mux-logo.png" class="code-four-image" id="mux" alt="">
-                </div>
-                <div id="div15">
-                    <img src="./pyramid-logo.png" class="code-four-image" id="pyramid">
-                </div>
-            </section>
-            <a href="https://apitoolkit.io/docs/sdks" id="view-sdk">View all SDKs <i class="fa-solid fa-arrow-right"></i></a>
+            <article>
+                <section id="code-four">
+                    <div id="div1">
+                        <img src="./express-logo.png" class="code-four-image" id="express" alt="">
+                    </div>
+                    <div id="div2">
+                        <img src="./phoenix-logo.png" class="code-four-image" id="phoenix" alt="">
+                    </div>
+                    <div id="div3">
+                        <img src="./laravel-logo.png" class="code-four-image" id="laravel" alt="">
+                    </div>
+                    <div id="div4">
+                        <img src="./netcore-logo.png" class="code-four-image" id="nest" alt="">
+                    </div>
+                    <div id="div5">
+                        <img src="./django-logo.png" class="code-four-image" id="django" alt="">
+                    </div>
+                    <div id="div6">
+                        <img src="./go-logo.svg" class="code-four-image" id="go" alt="">
+                    </div>
+                    <div id="div7">
+                        <img src="./fastapi-logo.png" class="code-four-image" id="fast-api" alt="">
+                    </div>
+                    <div id="div8">
+                        <img src="./symfony-logo.png" class="code-four-image" id="symfony" alt="">
+                    </div>
+                    <div id="div9">
+                        <img src="./flask-logo.png" class="code-four-image" id="flask" alt="">
+                    </div>
+                    <div id="div10">
+                        <img src="./gin-logo.png" class="code-four-image" id="gin" alt="">
+                    </div>
+                    <div id="div11">
+                        <img src="./adonis-logo.png" class="code-four-image" id="adonis" alt="">
+                    </div>
+                    <div id="div12">
+                        <img src="./fastify-logo.png" class="code-four-image" id="fastify" alt="">
+                    </div>
+                    <div id="div13">
+                        <img src="./nest-logo.png" class="code-four-image" id="nest2" alt="">
+                    </div>
+                    <div id="div14">
+                        <img src="./mux-logo.png" class="code-four-image" id="mux" alt="">
+                    </div>
+                    <div id="div15">
+                        <img src="./pyramid-logo.png" class="code-four-image" id="pyramid">
+                    </div>
+                </section>
+                <a href="https://apitoolkit.io/docs/sdks" id="view-sdk">View all SDKs <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
             <section id="code-five">
                 <h2>ExpressJS</h2>
                 <p class="space-down">Here's how to quickly integrate APItoolkit into your Express.js application.</p>

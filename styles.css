@@ -1291,7 +1291,7 @@ footer section:nth-of-type(1) p{
 }
 
 .fs2ss:nth-of-type(5){
-    height: 12em;
+    height: 15em;
     margin-bottom: 1em;
 }
 
@@ -1404,7 +1404,7 @@ footer section:nth-of-type(1) p{
 }
 
 #fds2 .fs2ss:nth-of-type(5){
-    height: 19em;
+    height: 22em;
 }
 
 #fds2 .fs2ss:nth-of-type(5) .fdsd-p1{
@@ -2053,12 +2053,13 @@ details[open] summary{
 
 #code-two{
     display: flex;
-    height: 53em;
+    height: 55em;
     justify-content: space-between;
 }
 
 #code-four{
-    width: 35%;
+    width: 70%;
+    margin-bottom: 2em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -2075,26 +2076,19 @@ details[open] summary{
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
+    margin-bottom: 1em;
 }
 
 #code-four div:hover{
     cursor: pointer;
 }
 
-#code-four div:nth-of-type(16){
-    width: 100%;
-    height: 3em;
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
+
 
 @media(max-width: 1100px){
     #codes{
-        height: 80em;
+        height: 90em;
     }
 }
 
@@ -2117,12 +2111,7 @@ details[open] summary{
 
     #view-sdk{
         margin-top: 2em;
-        margin-bottom: 4em;
     }
-}
-
-#code-four div:nth-of-type(16):hover{
-    background-color: rgb(12, 12, 82);
 }
 
 #view-sdk{
@@ -2130,12 +2119,13 @@ details[open] summary{
     border-radius: 10px;
     text-decoration: none;
     color: rgb(12, 12, 82);
-    width: 100%;
     align-self: center;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
     transition: all 0.3s;
+    padding-left: 8em;
+    padding-right: 8em;
 }
 
 #view-sdk i{
@@ -2178,7 +2168,7 @@ details[open] summary{
 
 
 #code-five{
-    width: 60%;
+    width: 100%;
     padding: 0em 0em 0em 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -2668,11 +2658,23 @@ details[open] summary{
     }
 }
 
+#hiddenbtn1, #hiddenbtn2, #hiddenbtn3{
+    display: none;
+}
+
 /* Media Query for screen width below 800px */
 @media (max-width: 800px) {
     body {
         padding-left: 3em;
         padding-right: 3em;
+    }
+
+    nav{
+        padding: 1em;
+    }
+
+    #hiddenbtn1, #hiddenbtn2, #hiddenbtn3{
+        display: block;
     }
     
     .nav-list {
@@ -2688,16 +2690,41 @@ details[open] summary{
         padding: 1em;
     }
 
-
     .nav-item {
         margin: 0.5em 0;
     }
     
+    #right-nav {
+        display: none;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list.show .nav-item {
+        margin: 1em 0;
+        text-align: left; /* Align text to the left */
+    }
+
+    .nav-list.show #signinbtn {
+        margin-bottom: 0.5em; /* Add bottom margin to the Sign In button */
+    }
+
+    .nav-list.show #startbtn{
+        margin-top: 0.5em; /* Add top margin to the Start button */
+        margin-left: 0;
+    }
+
+    .nav-list.show .nav-item.theme-toggle {
+        margin-top: 1em;
+    }
+
     .toggle-nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 85%;
     }
 
     .toggle-nav button {
@@ -2711,10 +2738,6 @@ details[open] summary{
         display: none;
     }
 
-    .nav-list.show {
-        display: flex;
-    }
-
     .nav-list.show + .toggle-nav .close-nav {
         display: inline;
     }
@@ -2722,7 +2745,7 @@ details[open] summary{
     .nav-list.show + .toggle-nav .open-nav {
         display: none;
     }
-    
+
     /* Ensure the logo is always visible */
     .navbar-left {
         display: flex;
@@ -2732,12 +2755,26 @@ details[open] summary{
     #homelink {
         display: block;
     }
+
+    #logo-link{
+        width: 100em;
+    }
+
+    #latestupdates{
+        margin-top: 0em;
+    }
 }
 
 /* Hide toggle buttons on large screens */
 @media (min-width: 801px) {
     .toggle-nav {
         display: none;
+    }
+
+    /* Display right-nav section on larger screens */
+    #right-nav {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -3043,5 +3080,52 @@ details[open] summary{
 @media (max-width: 300px) {
     #first-outershell{
         height: 26em;
+    }
+}
+
+@media (max-width: 600px){
+    .graph-div section p{
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 800px) {
+    #shell7{
+        height: 25em;
+    }
+}
+
+@media (max-width: 550px) {
+    #view-sdk{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    #code-five{
+        margin-top: 2em;
+    }
+
+}
+
+@media (max-width: 300px) {
+    #scale-security div:nth-of-type(1){
+        height: 75vh;
+    }
+
+    #shell7{
+        height: 30em;
+    }
+
+    #fds3 .fs2ss:nth-of-type(1) .fa-x-twitter{
+        display: none;
+    }
+
+    #code-one h2{
+        margin-top: 0em;
+    }
+
+    #view-sdk{
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
