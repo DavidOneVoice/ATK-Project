@@ -994,6 +994,17 @@ footer section:nth-of-type(1) p{
     }
 }
 
+@media (max-width: 700px) {
+    #first-section ul li{
+        width: 100%;
+    }
+
+    #first-section #last-list{
+        text-align: left;
+    }
+}
+
+
 @media (max-width: 650px) {
     #discord{
         flex-direction: column;
@@ -3135,5 +3146,9 @@ details[open] summary{
 
     #third-outershell{
         height: 30em;
+    }
+
+    #first-section ul li{
+        font-size: 0.6em;
     }
 }
